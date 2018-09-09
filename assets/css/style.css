@@ -44,23 +44,6 @@ ol li {
   font-size: 120%;
 }
 
-/* Classes */
-.numberToMatch, .winsAndLosses{
-	float: left;
-	width: 15%;
-	height: 60px;
-}
-
-.userTotal{
-	width: 15%;
-	height: 60px;
-}
-
-.gemImage{
-	height: 60px;
-	margin: 10px;
-}
-
 /* media queries */
 
 /* Extra small devices (portrait phones, less than 576px) */
