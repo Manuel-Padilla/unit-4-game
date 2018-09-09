@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+  <title>Crystal Collector</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="jumbotron">
+      <h1 class="brand text-center">Crystal Collector</h1>
+    </div>
+
+    <div class="transbox">
+      <div class="row">
+        <div class="col-md-8">
+          <ol>
+            <h2>How to play:</h2>
+            <li>A random number "Target" will be shown at the start of the game.</li>
+            <li>There are four crystals below.</li>
+            <li>Click on a crystal and points will be added to "Score".</li>
+            <li>To win, match "Score" to the "Target".</li>
+            <li>If "Score" goes over "Target", you lose.</li>
+            <li>Click on a crystal to view it's value.</li>
+            <li>Values reset at the start of each game.</li>
+          </ol>
+        </div>
+        <div class="col-md-4">
+          <div class="row">
+            <h2>Target:
+              <span id="randomNumber"></span>
+            </h2>
+          </div>
+          <div class="row">
+            <h2>Score:
+              <span id="finalTotal"></span>
+            </h2>
+          </div>
+          <div class="row">
+            <div class="winsAndLosses">
+              <h2>Wins:
+                <span id="numberWins"></span>
+              </h2>
+              <h2>Losses:
+                <span id="numberLosses"></span>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="container">
+        <div class="row">
+
+          <figure class="col-md-3 text-center"><img src="assets/images/Crystal_Geyser.png" class=genImage id="one" alt="Crystal Geyser"><figcaption>Crystal Geyser</figcaption></figure>
+
+          <figure class="col-md-3 text-center"><img src="assets/images/Crystal_Pepsi.png" class=genImage id="two" alt="Crystal Pepsi"><figcaption>Crystal Pepsi</figcaption></figure>
+
+          <figure class="col-md-3 text-center"><img src="assets/images/Crystal_Camera.png" class=genImage id="three" alt="Crystal Camera"><figcaption>Crystal Camera</figcaption></figure>
+
+          <figure class="col-md-3 text-center"> <img src="assets/images/Crystal_Oil.png" class=genImage id="four" alt="Crystal Oil"><figcaption>Crystal Oil</figcaption></figure>
+          
+        </div>
+      </div>
+    </div>  
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+/* General Elements*/
+body{
+  background: url(../images/background2.jpg);
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-attachment: fixed;
+}
+
+.jumbotron {
+  margin-top: 20px;
+  background-image: linear-gradient(-90deg, rgb(27, 115, 156), rgb(12, 71, 88));
+  padding: 32px 16px;
+}
+
+div#center {
+  margin: auto, 0;
+}
+
+.background {
+  background-color: #fff;
+  opacity: 0.8;
+}
+
+div.transbox {
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid #808080;
+  padding: 2%;
+}
+
+.brand {
+  font-family: 'Audiowide', cursive;
+  font-size: 5.5rem;
+  color: #7cbadf;
+  text-decoration: underline;
+}
+
+h2, h3, figcaption {
+  font-family: 'Audiowide', cursive;
+  color: #5e7888;
+  line-height: 160%;
+}
+
+ol li {
+  font-size: 120%;
+}
+
+/* Classes */
+.numberToMatch, .winsAndLosses{
+	float: left;
+	width: 15%;
+	height: 60px;
+}
+
+.userTotal{
+	width: 15%;
+	height: 60px;
+}
+
+.gemImage{
+	height: 60px;
+	margin: 10px;
+}
+
+/* media queries */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
