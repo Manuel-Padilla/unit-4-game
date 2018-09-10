@@ -16,7 +16,7 @@ $(document).ready(function () {
   // Random number has to be between 1 - 12
   // 
 
-  var userTotal = 0;
+  var score = 0;
   var wins = 0;
   var losses = 0;
   //  Decaring variables for tallies
@@ -33,20 +33,20 @@ $(document).ready(function () {
     num2 = Math.floor(Math.random() * 11 + 1);
     num3 = Math.floor(Math.random() * 11 + 1);
     num4 = Math.floor(Math.random() * 11 + 1);
-    userTotal = 0;
-    $('#finalTotal').text(userTotal);
+    score = 0;
+    $('#finalTotal').text(score);
   }
 
-  //adds the wins to the userTotal
-  function yay() {
-    alert("You won!");
+  //adds to the wins
+  function win() {
+    alert("You Win!");
     wins++;
     $('#numberWins').text(wins);
     reset();
   }
 
-  //addes the losses to the userTotal
-  function loser() {
+  //adds to the losses
+  function loss() {
     alert("You lose!");
     losses++;
     $('#numberLosses').text(losses);
@@ -54,51 +54,54 @@ $(document).ready(function () {
   }
 
   //sets up click for crystals
+  //Crystal Geyser
   $('#one').on('click', function () {
-    userTotal = userTotal + num1;
-    console.log("New userTotal= " + userTotal);
-    $('#finalTotal').text(userTotal);
+    score = score + num1;
+    console.log("New score= " + score);
+    $('#finalTotal').text(score);
     //sets win/lose conditions
-    if (userTotal == Random) {
-      yay();
+    if (score === Random) {
+      win();
     }
-    else if (userTotal > Random) {
-      loser();
+    else if (score > Random) {
+      loss();
     }
   })
+  //Crystal Pepsi
   $('#two').on('click', function () {
-    userTotal = userTotal + num2;
-    console.log("New userTotal= " + userTotal);
-    $('#finalTotal').text(userTotal);
-    if (userTotal == Random) {
-      yay();
+    score = score + num2;
+    console.log("New score= " + score);
+    $('#finalTotal').text(score);
+    if (score === Random) {
+      win();
     }
-    else if (userTotal > Random) {
-      loser();
+    else if (score > Random) {
+      loss();
     }
   })
+  //Crystal Camera
   $('#three').on('click', function () {
-    userTotal = userTotal + num3;
-    console.log("New userTotal= " + userTotal);
-    $('#finalTotal').text(userTotal);
+    score = score + num3;
+    console.log("New score= " + score);
+    $('#finalTotal').text(score);
     //sets win/lose conditions
-    if (userTotal == Random) {
-      yay();
+    if (score === Random) {
+      win();
     }
-    else if (userTotal > Random) {
-      loser();
+    else if (score > Random) {
+      loss();
     }
   })
+  //Crystal Oil
   $('#four').on('click', function () {
-    userTotal = userTotal + num4;
-    console.log("New userTotal= " + userTotal);
-    $('#finalTotal').text(userTotal);
-
-    if (userTotal == Random) {
-      yay();
+    score = score + num4;
+    console.log("New score= " + score);
+    $('#finalTotal').text(score);
+    if (score === Random) {
+      win();
     }
-    else if (userTotal > Random) {
-      loser();
+    else if (score > Random) {
+      loss();
     }
   });
 }); 
