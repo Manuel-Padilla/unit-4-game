@@ -39,7 +39,8 @@ $(document).ready(function () {
 
   //adds to the wins
   function win() {
-    alert("You Win!");
+    $("#you-win").html("<h1>You Won!!!</h1>");
+    //alert("You Win!");
     wins++;
     $('#numberWins').text(wins);
     reset();
@@ -47,7 +48,8 @@ $(document).ready(function () {
 
   //adds to the losses
   function loss() {
-    alert("You lose!");
+    $('#you-lose').html('<h1>You Lost :(</h1>');
+    //alert("You lose!");
     losses++;
     $('#numberLosses').text(losses);
     reset()
@@ -59,6 +61,8 @@ $(document).ready(function () {
     score = score + num1;
     console.log("New score= " + score);
     $('#finalTotal').text(score);
+    $('#you-win').html(' '); // sets 'you win' back to null
+    $('#you-lose').html(' '); // sets 'you lose' back to null
     //sets win/lose conditions
     if (score === Random) {
       win();
@@ -72,6 +76,8 @@ $(document).ready(function () {
     score = score + num2;
     console.log("New score= " + score);
     $('#finalTotal').text(score);
+    $('#you-win').html(' ');
+    $('#you-lose').html(' ');
     if (score === Random) {
       win();
     }
@@ -84,6 +90,8 @@ $(document).ready(function () {
     score = score + num3;
     console.log("New score= " + score);
     $('#finalTotal').text(score);
+    $('#you-win').html(' ');
+    $('#you-lose').html(' ');
     //sets win/lose conditions
     if (score === Random) {
       win();
@@ -97,6 +105,8 @@ $(document).ready(function () {
     score = score + num4;
     console.log("New score= " + score);
     $('#finalTotal').text(score);
+    $('#you-win').html(' ');
+    $('#you-lose').html(' ');
     if (score === Random) {
       win();
     }

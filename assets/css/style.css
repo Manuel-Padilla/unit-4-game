@@ -34,7 +34,11 @@ div.transbox {
   text-decoration: underline;
 }
 
-h2, h3, figcaption {
+h2, 
+h3, 
+figcaption, 
+#you-win, 
+#you-lose {
   font-family: 'Audiowide', cursive;
   color: #5e7888;
   line-height: 160%;
